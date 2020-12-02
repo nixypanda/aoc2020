@@ -26,7 +26,9 @@ source-repository head
 library
   exposed-modules:
       Day01
+      Day02
       Lib.ListUtils
+      Lib.Utils
   other-modules:
       Paths_aoc20
   hs-source-dirs:
