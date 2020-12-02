@@ -14,6 +14,8 @@ import Options.Applicative
     , Parser
     )
 
+import Day01 ( d1p1, d1p2 )
+
 
 data Question = Question
   { day  :: Int
@@ -39,5 +41,5 @@ main = solve =<< execParser opts
 
 
 solve :: Question -> IO ()
-solve = undefined
-
+solve (Question {day = 1, part = 1}) = d1p1
+solve (Question {day = 1, part = 2}) = d1p2
