@@ -27,10 +27,10 @@ library
   exposed-modules:
       Day01
       Day02
+      Day03
+      Day04
       Lib.ListUtils
       Lib.Utils
-      Day02
-      Day03
   other-modules:
       Paths_aoc20
   hs-source-dirs:
