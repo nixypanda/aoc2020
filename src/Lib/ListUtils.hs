@@ -6,8 +6,6 @@ safeHead :: [a] -> Maybe a
 safeHead [] = Nothing
 safeHead (x:_) = Just x
 
--- day 01
-
 allTwoCombinations :: [Int] -> [[Int]]
 allTwoCombinations l = fmap (\(x,y) -> [x, y]) $ (,) <$> l <*> l
 
@@ -32,3 +30,14 @@ tuplify _ = error "Fuck yeah! Error"
 tuplify3 :: [c] -> (c, c, c)
 tuplify3 [a, b, c] = (a, b, c)
 tuplify3 _ = error "Fuck yeah! Error"
+
+-- >>> consectiveMissingNumbers [1,2,3,4,6,7,8,10,11]
+-- [5,9]
+consectiveMissingNumbers :: (Ord a, Enum a) => [a] -> [a]
+consectiveMissingNumbers xs = go (sort xs) [(minimum xs)..]
+    where
+        go (x:xs) (y:ys)
+          | x == y = go xs ys
+          | x > y = y : go (x:xs) ys
+          | otherwise = error "Impossible"
+        go [] _ = []
