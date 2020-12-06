@@ -30,6 +30,7 @@ library
       Day03
       Day04
       Day05
+      Day06
       Lib.ListUtils
       Lib.Range
       Lib.Utils
@@ -39,6 +40,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
     , optparse-applicative
     , parsec
     , split
@@ -54,6 +56,7 @@ executable aoc20-exe
   build-depends:
       aoc20
     , base >=4.7 && <5
+    , containers
     , optparse-applicative
     , parsec
     , split
@@ -70,6 +73,7 @@ test-suite aoc20-test
   build-depends:
       aoc20
     , base >=4.7 && <5
+    , containers
     , optparse-applicative
     , parsec
     , split

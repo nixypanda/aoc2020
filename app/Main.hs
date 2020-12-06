@@ -19,6 +19,7 @@ import Day02 ( d2p1, d2p2 )
 import Day03 ( d3p1, d3p2 )
 import Day04 ( d4p1, d4p2 )
 import Day05 ( d5p1, d5p2 )
+import Day06 ( d6p1, d6p2 )
 
 
 data Question = Question
@@ -55,3 +56,5 @@ solve Question {day = 4, part = 1} = d4p1
 solve Question {day = 4, part = 2} = d4p2
 solve Question {day = 5, part = 1} = d5p1
 solve Question {day = 5, part = 2} = d5p2
+solve Question {day = 6, part = 1} = d6p1
+solve Question {day = 6, part = 2} = d6p2
