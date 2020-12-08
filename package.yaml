@@ -25,6 +25,7 @@ dependencies:
 - parsec
 - split
 - containers
+- vector
 
 library:
   source-dirs: src

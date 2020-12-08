@@ -1,4 +1,4 @@
-module Day04 (d4p1, d4p2) where
+module Day04 (d4p1, d4p2, tuplify) where
 
 import Data.List.Split ( splitOn )
 import Data.Char (isHexDigit, isDigit)

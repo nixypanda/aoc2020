@@ -31,10 +31,12 @@ library
       Day04
       Day05
       Day06
+      Day07
+      Day08
+      Lib.GameConsole
       Lib.ListUtils
       Lib.Range
       Lib.Utils
-      Day07
   other-modules:
       Paths_aoc20
   hs-source-dirs:
@@ -45,6 +47,7 @@ library
     , optparse-applicative
     , parsec
     , split
+    , vector
   default-language: Haskell2010
 
 executable aoc20-exe
@@ -61,6 +64,7 @@ executable aoc20-exe
     , optparse-applicative
     , parsec
     , split
+    , vector
   default-language: Haskell2010
 
 test-suite aoc20-test
@@ -78,4 +82,5 @@ test-suite aoc20-test
     , optparse-applicative
     , parsec
     , split
+    , vector
   default-language: Haskell2010
