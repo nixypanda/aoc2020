@@ -1,6 +1,6 @@
 module Lib.ListUtils where
 
-import Data.List (sort, intersect)
+import Data.List (sort, intersect, tails, inits)
 
 safeHead :: [a] -> Maybe a
 safeHead [] = Nothing
@@ -41,3 +41,8 @@ consectiveMissingNumbers xs = go (sort xs) [(minimum xs)..]
           | x > y = y : go (x:xs) ys
           | otherwise = error "Impossible"
         go [] _ = []
+
+-- >>> allContinousCombinations [1,2,3]
+-- [[],[1],[],[1,2],[2],[],[1,2,3],[2,3],[3],[]]
+allContinousCombinations :: [a] -> [[a]]
+allContinousCombinations = concatMap tails . inits
