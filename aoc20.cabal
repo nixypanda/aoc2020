@@ -41,6 +41,7 @@ library
       Lib.ListUtils
       Lib.Range
       Lib.Utils
+      Day10
   other-modules:
       Paths_aoc20
   hs-source-dirs:
