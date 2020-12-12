@@ -25,6 +25,7 @@ import Day08 ( d8p1, d8p2 )
 import Day09 ( d9p1, d9p2 )
 import Day10 ( d10p1, d10p2 )
 import Day11 ( d11p1, d11p2 )
+import Day12 ( d12p1, d12p2 )
 
 
 data Question = Question
@@ -72,4 +73,7 @@ solve Question {day = 9, part = 2} = d9p2
 solve Question {day = 10, part = 1} = d10p1
 solve Question {day = 10, part = 2} = d10p2
 solve Question {day = 11, part = 1} = d11p1
+solve Question {day = 11, part = 2} = d11p2
+solve Question {day = 12, part = 2} = d12p2
+solve Question {day = 12, part = 1} = d12p1
 solve Question {day = 11, part = 2} = d11p2
