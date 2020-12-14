@@ -37,10 +37,12 @@ library
       Day10
       Day11
       Day12
+      Day13
       Lib.GameConsole
       Lib.Geometry
       Lib.Grid
       Lib.ListUtils
+      Lib.Math
       Lib.Range
       Lib.Utils
   other-modules:
