@@ -39,6 +39,7 @@ library
       Day12
       Day13
       Day14
+      Day15
       Lib.GameConsole
       Lib.Geometry
       Lib.Grid
@@ -51,7 +52,8 @@ library
   hs-source-dirs:
       src
   build-depends:
-      base >=4.7 && <5
+      array
+    , base >=4.7 && <5
     , containers
     , optparse-applicative
     , parsec
@@ -68,6 +70,7 @@ executable aoc20-exe
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aoc20
+    , array
     , base >=4.7 && <5
     , containers
     , optparse-applicative
@@ -86,6 +89,7 @@ test-suite aoc20-test
   ghc-options: -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       aoc20
+    , array
     , base >=4.7 && <5
     , containers
     , optparse-applicative
