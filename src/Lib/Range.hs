@@ -6,7 +6,7 @@ module Lib.Range where
 type Location = (Int, Int)
 
 data Range = Range { lower :: Int, upper :: Int}
-    deriving (Show)
+    deriving (Show, Eq)
 
 -- >>> mid $ Range 0 127
 -- 63
@@ -31,6 +31,11 @@ lowerHalf r = r { upper = mid r}
 upperHalf :: Range -> Range
 upperHalf r = r { lower = mid r + 1}
 
+inRangeInc :: Int -> Range -> Bool
+inRangeInc x Range{..} = x >= lower && x <= upper
+
+isSubsumedBy :: Range -> Range -> Bool
+isSubsumedBy (Range l1 u1) (Range l2 u2) = l1 >= l2 && u1 <= u2
 
 data SplitDirection = B | F | R | L
     deriving (Show)

@@ -14,9 +14,6 @@ iiMap f = V.imap (V.imap . f)
 fromLists :: [[a]] -> Grid a
 fromLists = V.fromList . fmap V.fromList
 
-converge :: Eq a => (a -> a) -> a -> a
-converge = until =<< ((==) =<<)
-
 toLists :: Grid a -> [[a]]
 toLists = fmap V.toList . V.toList
 

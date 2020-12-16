@@ -46,3 +46,10 @@ consectiveMissingNumbers xs = go (sort xs) [(minimum xs)..]
 -- [[],[1],[],[1,2],[2],[],[1,2,3],[2,3],[3],[]]
 allContinousCombinations :: [a] -> [[a]]
 allContinousCombinations = concatMap tails . inits
+
+-- >>> scrub [[1], [1,2], [1,2,3] ]
+-- [[1],[2],[2,3]]
+scrub :: Eq a => [[a]] -> [[a]]
+scrub xss = fmap (\xs -> if length xs == 1 then xs else filter (`notElem` singles) xs) xss
+    where singles = head <$> filter ((== 1) . length) xss
+

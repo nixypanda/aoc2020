@@ -5,12 +5,12 @@ import Lib.Grid
     ( Grid
     , Location
     , iiMap
-    , converge
     , layoutAround
     , fromLists
     , toLists
     , howMany
     )
+import Lib.Utils ( converge )
 
 
 data Seat = Occupied | Empty | Void deriving (Show, Eq)
