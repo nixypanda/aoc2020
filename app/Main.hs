@@ -31,6 +31,7 @@ import Day14 ( d14p1, d14p2 )
 import Day15 ( d15p1, d15p2 )
 import Day16 ( d16p1, d16p2 )
 import Day17 ( d17p1, d17p2 )
+import Day18 ( d18p1, d18p2 )
 
 
 data Question = Question
@@ -91,3 +92,5 @@ solve Question {day = 16, part = 1} = d16p1
 solve Question {day = 16, part = 2} = d16p2
 solve Question {day = 17, part = 1} = d17p1
 solve Question {day = 17, part = 2} = d17p2
+solve Question {day = 18, part = 1} = d18p1
+solve Question {day = 18, part = 2} = d18p2
