@@ -44,11 +44,13 @@ library
       Day17
       Day18
       Day19
+      Day21
       Lib.GameConsole
       Lib.Geometry
       Lib.Grid
       Lib.ListUtils
       Lib.Math
+      Lib.ParsingUtils
       Lib.Range
       Lib.Utils
   other-modules:
