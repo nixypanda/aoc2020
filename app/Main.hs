@@ -35,6 +35,7 @@ import Day18 ( d18p1, d18p2 )
 import Day19 ( d19p1, d19p2 )
 import Day21 ( d21p1, d21p2 )
 import Day22 ( d22p1, d22p2 )
+import Day23 ( d23p1, d23p2 )
 
 
 data Question = Question
@@ -103,3 +104,5 @@ solve Question {day = 21, part = 1} = d21p1
 solve Question {day = 21, part = 2} = d21p2
 solve Question {day = 22, part = 1} = d22p1
 solve Question {day = 22, part = 2} = d22p2
+solve Question {day = 23, part = 1} = d23p1
+solve Question {day = 23, part = 2} = d23p2

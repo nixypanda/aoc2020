@@ -46,6 +46,7 @@ library
       Day19
       Day21
       Day22
+      Day23
       Lib.GameConsole
       Lib.Geometry
       Lib.Grid
