@@ -27,6 +27,7 @@ dependencies:
 - containers
 - vector
 - array
+- arithmoi
 
 library:
   source-dirs: src
